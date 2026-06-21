@@ -28,17 +28,32 @@ git clone <this-repository-url>
 Gitに慣れていない場合は、GitHubの `Code` → `Download ZIP` から取得しても構いません。
 
 ### 2. GrokにRuntime fileを読み込ませる
+1. Grok側でProjectを作成します。
+2. Projectの指示欄に、`GrokCopyPaste` 内の次のファイルの内容をコピー＆ペーストします。
 
-①Grok側でProjectを作成します。
-②プロジェクトの指示欄にGrokCopyPaste内の`00_PROJECT_INSTRUCTION_COPY.md`をコピペします。
-③ファイル欄に、GrokDropフォルダ内の以下をすべて入れます。
- `01_RUNTIME_LOOP_MIN.md`
- `03_CHARACTER_RUNTIME_CARDS.md`
- `04_EVENT_SEEDS_MINI.md`
- `05_INTIMACY_REACTION_ENGINE_MIN.md`
- `06_NSFW_TEXTURE_ROUTER_MIN.md`
-④GrokCopyPaste内の`91_USER_READABLE_PROLOGUE.md` を読みます。これはユーザーが読むための正史プロローグです。Grokチャット冒頭へ貼る起動文ではありませ⑤GrokCopyPaste内の90_FIXED_INTRO_COPYの内容をコピペしてＧＲＯＫにプロンプトとして渡します。これでセッション開始です。
+   ```text
+   00_PROJECT_INSTRUCTION_COPY.md
+   ```
+3. Projectのファイル欄に、`GrokDrop` フォルダ内の次のファイルをすべてアップロードします。
+   ```text
+   01_RUNTIME_LOOP_MIN.md
+   03_CHARACTER_RUNTIME_CARDS.md
+   04_EVENT_SEEDS_MINI.md
+   05_INTIMACY_REACTION_ENGINE_MIN.md
+   06_NSFW_TEXTURE_ROUTER_MIN.md
+   ```
+4. `GrokCopyPaste` 内の次のファイルを読みます。
+   ```text
+   91_USER_READABLE_PROLOGUE.md
+   ```
+   これはユーザーが読むための正史プロローグです。
+   Grokチャット冒頭へ貼る起動文ではありません。
 
+5. `GrokCopyPaste` 内の次のファイルの内容をコピー＆ペーストし、Grokにプロンプトとして渡します。
+   ```text
+   90_FIXED_INTRO_COPY.md
+   ```
+   これでセッション開始です。
 ### 3. 実際にやっていく
 - 基本的にはGrokが選択肢を出してくれるのでそれを選べばいいです。自由記述も可能です。
 - 相手にこうしてほしい、こういう流れがいい、こういうシチュがいい、といった要望を積極的に書きましょう。やってくれます。
